@@ -10,20 +10,20 @@ class Usuario {
         const fullName = `Mi nombre completo es: ${this.nombre} ${this.apellido}`;
         console.log(fullName);
     };
-    addMascota(string){
-        this.mascotas.push(string)
+    addMascota(petName){
+        this.mascotas.push(petName)
     };
     countMascotas (){
         console.log(this.mascotas.length);
     }
-    addBook (string1, string2){
-        const nuevoLibro = {titulo:string1, autor:string2};
+    addBook (libro, autor){
+        const nuevoLibro = {titulo:libro, autor:autor};
         this.libros.push(nuevoLibro);
     }
     getBookNames(){
         const arr = [];
-        this.libros.forEach(x=>{
-            acc.push(x.titulo)
+        this.libros.forEach(libro=>{
+            arr.push(libro.titulo)
         })
         console.log(arr)
     }
